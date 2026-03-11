@@ -179,9 +179,18 @@
 				<div class="swiper-slide">
 					<div class="auto-container pb-5">
 						<div class="row align-items-center">
-							<div class="col-lg-10 col-md-12 me-3 col-sm-12 my-5">
-								<div class="slider-two_content-inner text-center">
-									<h2 class="slider-two_heading">Create Your Profile On <span>Stokkex</span></h2>
+							<div class="col-lg-10 col-md-10 me-auto col-sm-12 my-5">
+								<div class="slider-two_content-inner">
+									<h2 class="slider-two_heading">Profile Setting</h2>
+                                    <p class="text-white mb-4">Manage and customize your account information, update your personal details,<br> Change your password to keep your profile accurate, secure, and up to date.</p>
+									<div class="slider-two_button">
+										<a href="../change-password/" class="template-btn btn-style-three">
+											<span class="btn-wrap">
+												<span class="text-one">Secure Your Password Now</span>
+												<span class="text-two">Secure Your Password Now</span>
+											</span>
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -196,78 +205,66 @@
 	<section class="faq-one style-four">
 		<div class="auto-container">
 			<div class="row clearfix">
-
-                <div class="col-md-12">
-
-					<div class="sec-title title-anim centered">
-						<h3 class="sec-title_heading fw-bold">Let’s <span>Complete</span> Your Profile</h3>
+				<div class="col-md-12 mb-3">
+					<div class="sec-title title-anim mb-3 centered">
+						<h3 class="sec-title_heading fw-bold">Your <span>Business Profile</span> Overview</h3>
 					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="mb-4">
+						<div class="profile-img-view my-4 centered" id="preview">
+							<img src="../../assets/images/web/how-it-work/19826.jpg" alt="" srcset="">
+						</div>
+					</div>
+				</div>
 
-                    <div class="sec-title style-three centered">
-                        <d class="sec-title_title">Profile Setup</d>
-                    </div>
-                </div>
-
-				<div class="col-md-7 mx-auto">
-                    <div class="card create-profile-area">
-                        <div class="card-body">
-							<div class="row">
-								<div class="col-md-11 mx-auto">
-									<!-- STEP LABELS -->
-									<div class="d-flex justify-content-between mb-3 text-center small">
-										<div class="step-label active">Company Details</div>
-										<div class="step-label">Seller Profile</div>
-										<div class="step-label">Verification</div>
+				<div class="col-md-10 mx-auto mt-4">
+					<ul class="nav nav-pills mb-5 d-flex align-items-center justify-content-center" id="pills-tab" role="tablist">
+						<li class="nav-item mx-3" role="presentation">
+							<button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Company Details</button>
+						</li>
+						<li class="nav-item mx-3" role="presentation">
+							<button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Seller Profile</button>
+						</li>
+						<li class="nav-item mx-3" role="presentation">
+							<button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Verification</button>
+						</li>
+					</ul>
+					<div class="tab-content" id="pills-tabContent">
+						<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+							<form action="" class="mt-4">
+								<div class="row">
+									<div class="col-md-12 mb-4">
+										<label for="" class="form-label fw-bold text-black">Company Logo</label>
+										<input type="file" class="form-control border border-dark py-2" value="Company Name" name="business_logo" id="imageInput">
 									</div>
-
-									<!-- PROGRESS BAR -->
-									<div class="progress mb-4" style="height:20px;">
-										<div id="formProgress" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width: 33%"></div>
-									</div>
-								</div>
-							</div>
-							<form id="sellerForm" method="" enctype="multipart/form-data">
-								<!-- STEP 1 -->
-								<fieldset>
-
-									<div class="row p-4">
-
-										<div class="col-md-12 mb-4">
-											<h4 class="fw-bold">Step 1 – Company Details</h4>
-										</div>
-
-										<div class="col-md-12 mb-4">
-											<label class="form-label">Company Name</label>
+									<div class="col-md-12 mb-4">
+											<label class="form-label fw-bold text-black">Company Name</label>
 											<input type="text" class="required form-control border border-dark py-2 rounded-3" name="company_name">
 										</div>
 
 										<div class="col-md-6 mb-4">
-											<label class="form-label">Company Registration Number</label>
+											<label class="form-label fw-bold text-black">Company Registration Number</label>
 											<input type="text" class="required form-control border border-dark py-2 rounded-3" name="company_registration_number">
 										</div>
 
 										<div class="col-md-6 mb-4">
-											<label class="form-label">VAT Number</label>
+											<label class="form-label fw-bold text-black">VAT Number</label>
 											<input type="text" class="form-control border border-dark py-2 rounded-3" name="vat_number">
 										</div>
 
-										<div class="col-md-12 mb-4">
-											<label class="form-label">Company Logo</label>
-											<input type="file" class="required-photo form-control border border-dark py-2 rounded-3" name="company_logo">
-										</div>
-
 										<div class="col-md-6 mb-4">
-											<label class="form-label">Country</label>
+											<label class="form-label fw-bold text-black">Country</label>
 											<input type="text" class="required form-control border border-dark py-2 rounded-3" name="country">
 										</div>
 
 										<div class="col-md-6 mb-4">
-											<label class="form-label">Region / State</label>
+											<label class="form-label fw-bold text-black">Region / State</label>
 											<input type="text" class="required form-control border border-dark py-2 rounded-3" name="state">
 										</div>
 
 										<div class="col-md-6 mb-4">
-											<label class="form-label">Industry</label>
+											<label class="form-label fw-bold text-black">Industry</label>
 											<select name="industry" class="required-select form-control form-select py-2 border border-dark">
 												<option disabled selected>Choose Industry</option>
 												<option value="power">Power & Utilities</option>
@@ -280,7 +277,7 @@
 										</div>
 
 										<div class="col-md-6 mb-4">
-											<label class="form-label">Business Type</label>
+											<label class="form-label fw-bold text-black">Business Type</label>
 											<select name="type" class="required-select form-control form-select py-2 border border-dark">
 												<option disabled selected>Select Please</option>
 												<option value="1">Manufacturer</option>
@@ -288,108 +285,95 @@
 												<option value="3">Trader</option>
 											</select>
 										</div>
-
-										<div class="col-md-12">
-										<button type="button" class="next btn btn-dark px-4 py-2">Next</button>
-										</div>
-
+									<div class="col-md-12 text-center mt-3">
+										<button type="button" class="template-btn btn-style-one fs-14 px-4 py-3">
+											<span class="btn-wrap">
+												<span class="text-one">Update Overview</span>
+												<span class="text-two">Update Overview</span>
+											</span>
+										</button>
 									</div>
-
-								</fieldset>
-								<!-- STEP 2 -->
-								<fieldset>
-
-									<div class="row p-4">
-
-										<div class="col-md-12 mb-4">
-											<h4 class="fw-bold">Step 2 – Seller Profile</h4>
-										</div>
-
-										<div class="col-md-6 mb-4">
-											<label class="form-label">Contact Name</label>
+								</div>
+							</form>
+						</div>
+						<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+							<form action="" class="mt-4">
+								<div class="row">
+									<div class="col-md-6 mb-4">
+											<label class="form-label fw-bold text-black">Contact Name</label>
 											<input type="text" class="form-control border border-dark py-2 rounded-3 required" name="contact_name">
 										</div>
 
 										<div class="col-md-6 mb-4">
-											<label class="form-label">Business Email</label>
+											<label class="form-label fw-bold text-black">Business Email</label>
 											<input type="email" class="form-control border border-dark py-2 rounded-3 required" name="contact_email">
 										</div>
 
 										<div class="col-md-6 mb-4">
-											<label class="form-label">Phone Number</label>
+											<label class="form-label fw-bold text-black">Phone Number</label>
 											<input type="tel" class="form-control border border-dark py-2 rounded-3 required" name="contact_phone">
 										</div>
 
 										<div class="col-md-6 mb-4">
-											<label class="form-label">WhatsApp (optional)</label>
+											<label class="form-label fw-bold text-black">WhatsApp (optional)</label>
 											<input type="tel" class="form-control border border-dark py-2 rounded-3" name="whatsapp">
 										</div>
 
 										<div class="col-md-12 mb-4">
-											<label class="form-label">Upload Profile</label>
+											<label class="form-label fw-bold text-black">Upload Profile</label>
 											<input type="file" class="required-photo form-control border border-dark py-2 rounded-3" name="profile">
 										</div>
-
-										<div class="col-md-12">
-											<button type="button" class="previous btn btn-dark px-4 py-2">Previous</button>
-											<button type="button" class="next btn btn-dark px-4 py-2">Next</button>
+										<div class="col-md-12 text-center mt-3">
+											<button type="button" class="template-btn btn-style-one fs-14 px-4 py-3">
+												<span class="btn-wrap">
+													<span class="text-one">Update Details</span>
+													<span class="text-two">Update Details</span>
+												</span>
+											</button>
 										</div>
-
-									</div>
-
-								</fieldset>
-								<!-- STEP 3 -->
-								<fieldset>
-
-									<div class="row p-4">
-
-										<div class="col-md-12 mb-4">
-											<h4 class="fw-bold">Step 3 – Verification</h4>
-										</div>
-
-										<div class="col-md-6 mb-4">
-											<label class="form-label">Company Established Year</label>
-											<input type="number" class="required form-control border border-dark py-2 rounded-3" name="company_registered_year">
-										</div>
-
-										<div class="col-md-12 mb-4">
-											<label class="form-label">Company Registration Document</label>
-											<input type="file" class="required-photo form-control border border-dark py-2 rounded-3" name="registration_document">
-										</div>
-
-										<div class="col-md-12 mb-4">
-											<label class="form-label">Business License</label>
-											<input type="file" class="required-photo form-control border border-dark py-2 rounded-3" name="business_license">
-										</div>
-
-										<div class="col-md-12 mb-4">
-											<label class="form-label">Website URL (optional)</label>
-											<input type="url" class="form-control border border-dark py-2 rounded-3" name="url">
-										</div>
-
-										<div class="col-md-12 mb-4">
-											<label class="form-label">Company Description</label>
-											<textarea class="required form-control border border-dark rounded-3" rows="4" name="description"></textarea>
-										</div>
-
-										<div class="col-md-12 mb-4">
-											<div class="alert alert-light border">
-											You're almost done! Once submitted, your seller profile will be reviewed before you can start listing products.
-											</div>
-										</div>
-
-										<div class="col-md-12">
-											<button type="button" class="previous btn btn-dark px-4 py-2">Previous</button>
-											<button type="submit" class="btn btn-primary px-4 py-2">Submit</button>
-										</div>
-
-									</div>
-
-								</fieldset>
+								</div>
 							</form>
-                        </div>
-                    </div>
-                </div>
+						</div>
+						<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+							<form action="" class="mt-4">
+								<div class="row">
+									<div class="col-md-6 mb-4">
+										<label class="form-label fw-bold text-black">Company Established Year</label>
+										<input type="number" class="required form-control border border-dark py-2 rounded-3" name="company_registered_year">
+									</div>
+
+									<div class="col-md-12 mb-4">
+										<label class="form-label fw-bold text-black">Company Registration Document</label>
+										<input type="file" class="required-photo form-control border border-dark py-2 rounded-3" name="registration_document">
+									</div>
+
+									<div class="col-md-12 mb-4">
+										<label class="form-label fw-bold text-black">Business License</label>
+										<input type="file" class="required-photo form-control border border-dark py-2 rounded-3" name="business_license">
+									</div>
+
+									<div class="col-md-12 mb-4">
+										<label class="form-label fw-bold text-black">Website URL (optional)</label>
+										<input type="url" class="form-control border border-dark py-2 rounded-3" name="url">
+									</div>
+
+									<div class="col-md-12 mb-4">
+										<label class="form-label fw-bold text-black">Company Description</label>
+										<textarea class="required form-control border border-dark rounded-3" rows="4" name="description"></textarea>
+									</div>
+									<div class="col-md-12 text-center mt-3">
+										<button type="button" class="template-btn btn-style-one fs-14 px-4 py-3">
+											<span class="btn-wrap">
+												<span class="text-one">Update Contact</span>
+												<span class="text-two">Update Contact</span>
+											</span>
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
 
 			</div>
 		</div>
