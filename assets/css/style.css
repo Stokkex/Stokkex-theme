@@ -8060,3 +8060,9 @@
 .yellow-text{
 	color: #FCCA18 !important;
 }
+.truncate-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

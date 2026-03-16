@@ -178,7 +178,7 @@ $(document).ready(function () {
 
 const input = document.getElementById("imageInput");
 const preview = document.getElementById("preview");
-
+if(input){
 input.addEventListener("change", function() {
     const file = this.files[0];
 
@@ -194,3 +194,4 @@ input.addEventListener("change", function() {
     preview.innerHTML = "<span>No image selected</span>";
     }
 });
+}
