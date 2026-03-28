@@ -6177,9 +6177,10 @@
 .sidebar-page-container .sidebar-inner{
 	position:relative;
 	padding: 30px 30px;
-	border-radius: 8px;
-	background-color: #f1f1f1;
-	border: 1px solid #000;
+	border-radius: 10px;
+	background-color: #fff;
+	/* box-shadow: 4px 2px 5px 5px rgba(0, 0, 0, 0.10); */
+	box-shadow: 2px 3px 12px 0px rgb(70 70 70);
 }
 
 /* Sidebar Widget */
@@ -6380,21 +6381,19 @@
 .popular-tags a{
 	position: relative;
 	padding: 6px 18px;
-	font-size: 14px;
-	font-weight: 400;
+	font-size: 15px;
+	font-weight: 500;
 	margin-right: 5px;
 	margin-bottom: 10px;
 	border-radius: 50px;
 	display: inline-block;
 	color:var(--color-six);
 	text-transform: capitalize;
-	border: 1px solid rgba(var(--white-color-rgb), 0.10);
+	border: 1px solid #ccc;
 }
 
 .popular-tags a:hover{
-	color: var(--white-color);
-	border-color: var(--main-color);
-	background-color: var(--main-color);
+	color: #000;
 }
 
 /* News Block Three */
@@ -8079,4 +8078,13 @@ user-select: none !important;
 .testimonial-block_one-wrapper{
 	height: 450px; 
 	overflow-y: scroll;
+}
+.company-logo{
+	height: 150px;
+	width: 150px;
+	object-fit: contain;
+	object-position: center;
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+	border-radius: 145px;
 }
