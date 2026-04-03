@@ -8088,3 +8088,18 @@ user-select: none !important;
 	margin-bottom: 20px;
 	border-radius: 145px;
 }
+.fs-12{
+	font-size: 12px !important;
+}
+
+.profile-img-view {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    object-position: center;
+    border: 1px solid #1b1b1b;
+    margin-bottom: 20px;
+    border-radius: 145px;
+    padding: 5px;
+    background: #ccc;
+}

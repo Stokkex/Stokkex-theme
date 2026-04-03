@@ -195,3 +195,20 @@ input.addEventListener("change", function() {
     }
 });
 }
+
+
+document.addEventListener("click", function(e) {
+    if (e.target.classList.contains("see-more-btn")) {
+        
+        let btn = e.target;
+        let text = btn.closest("p").querySelector(".description-text");
+
+        text.classList.toggle("truncate-3");
+
+        if (text.classList.contains("truncate-3")) {
+            btn.innerText = "See More";
+        } else {
+            btn.innerText = "See Less";
+        }
+    }
+});
