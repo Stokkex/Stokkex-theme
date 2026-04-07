@@ -8069,9 +8069,9 @@ user-select: none !important;
 .yellow-text{
 	color: #FCCA18 !important;
 }
-.truncate-3 {
+.truncate-2 {
   display: -webkit-box;
-  -webkit-line-clamp: 3; /* number of lines */
+  -webkit-line-clamp: 2; /* number of lines */
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
