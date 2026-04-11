@@ -8092,7 +8092,7 @@ user-select: none !important;
 	font-size: 12px !important;
 }
 
-.profile-img-view {
+.profile-img-views {
     height: 100px;
     width: 100px;
     object-fit: contain;
@@ -8102,4 +8102,39 @@ user-select: none !important;
     border-radius: 145px;
     padding: 5px;
     background: #ccc;
+}
+
+.ck-content {
+    color: #212529 !important;
+}
+
+/* Links */
+.ck-content a {
+    color: #0d6efd !important;
+    text-decoration: underline;
+}
+
+/* List items */
+.ck-content li {
+    color: #212529 !important;
+}
+
+/* Fix numbered list text + numbers */
+.ck-content ol,
+.ck-content ul {
+    color: #212529 !important;
+}
+
+/* Ensure list markers (1,2,3) are visible */
+.ck-content ol li::marker {
+    color: #212529 !important;
+}
+
+/* Bullet color fix */
+.ck-content ul li::marker {
+    color: #212529 !important;
+}
+
+.ck-content{
+	height: 300px;
 }
