@@ -29,7 +29,7 @@
 	<!-- <div class="cursor"></div>
 	<div class="cursor-follower"></div> -->
 	<!-- Cursor End -->
- 	
+ 	 
 	<!-- Preloader -->
 	<div class="loader-wrap">
 		<div class="preloader">
@@ -55,9 +55,8 @@
 	</div>
 	<!-- Preloader End -->
 	
-	<!-- Main Header -->
+    <!-- Main Header -->
 	<header class="main-header header-style-three">
-		
 		<!-- Header Lower -->
 		<div class="header-lower">
 			<div class="auto-container">
@@ -92,7 +91,7 @@
 											<ul>
 												<li><a href="../dashboard/">Dashboard</a></li>
 												<li><a href="#">Packages</a></li>
-												<li><a href="../my-profile/">My Profile</a></li>
+												<li><a href="../edit-profile/">My Profile</a></li>
 												<li><a href="#">Logout</a></li>
 											</ul>
 										    <div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>
@@ -125,7 +124,7 @@
                                     <ul class="dropdown-menu auth-dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                         <li><a class="dropdown-item auth-dropdown" href="../dashboard/"><i class="fa-solid fa-tachograph-digital pe-1"></i> Dashboard</a></li>
                                         <li><a class="dropdown-item auth-dropdown" href="#"><i class="fa-solid fa-sterling-sign pe-1"></i> Packages</a></li>
-                                        <li><a class="dropdown-item auth-dropdown" href="../my-profile/"><i class="fa-solid fa-user pe-1"></i> My Profile</a></li>
+                                        <li><a class="dropdown-item auth-dropdown" href="../edit-profile/"><i class="fa-solid fa-user pe-1"></i> My Profile</a></li>
                                         <li><a class="dropdown-item auth-dropdown" href="../../"><i class="fa-solid fa-arrow-right-from-bracket pe-1"></i> Logout</a></li>
                                     </ul>
                                 </div>
@@ -181,10 +180,10 @@
 						<div class="row align-items-center">
 							<div class="col-lg-10 col-md-10 me-auto col-sm-12 my-5">
 								<div class="slider-two_content-inner">
-									<h2 class="slider-two_heading">Buyer Order List</h2>
+									<h2 class="slider-two_heading">My Order Records</h2>
                                     <p class="text-white mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, sed neque. Eum exercitationem ea dolores omnis. Eveniet quidem doloremque tenetur ipsam accusamus fugit. Accusamus excepturi facere harum eos, odit dolore?</p>
 									<div class="slider-two_button">
-										<a href="../dashboard/" class="template-btn btn-style-three mx-1">
+										<a href="../dashboard/" class="template-btn btn-style-three">
 											<span class="btn-wrap">
 												<span class="text-one">Dashboard</span>
 												<span class="text-two">Dashboard</span>
@@ -202,12 +201,12 @@
 	<!-- End Main Slider Section -->
 
 	<!-- Faq One -->
-	<section class="faq-one style-four">
+    <section class="faq-one style-four">
 		<div class="auto-container">
 			<div class="row align-items-center">
                 <div class="col-md-12 my-4">
-                    <h3 class="sec-title_heading fw-bold mb-4">Buyers <span>Orders</span></h3>
-                    <p>View and manage orders placed by buyers in one convenient place. Track order details, monitor progress, and stay organized while handling buyer requests efficiently.</p>
+                    <h3 class="sec-title_heading fw-bold mb-4">My Placed <span>Orders</span> Records.</h3>
+                    <p>View and manage orders placed by you in one convenient place. Track order details, monitor progress, and stay organized.</p>
                     <hr>
                     <div class="row my-4 align-items-end">
                         <div class="col">
@@ -215,8 +214,8 @@
                             <input type="text" class="form-control border border-secondary" placeholder="Enter Order ID" aria-label="Last name">
                         </div>
                         <div class="col">
-                            <label for="" class="form-label">Search By Name</label>
-                            <input type="text" class="form-control border border-secondary" placeholder="Enter Buyer Name" aria-label="First name">
+                            <label for="" class="form-label">Search By Product Name</label>
+                            <input type="text" class="form-control border border-secondary" placeholder="Enter Product Name" aria-label="First name">
                         </div>
                         <div class="col">
                             <label for="" class="form-label">Search By Status</label>
@@ -241,13 +240,14 @@
                             <thead class="table-dark">
                                 <tr>
                                     <th>Order_ID</th>
-                                    <th>Buyer Name</th>
+                                    <th>Order_Date</th>
+                                    <th>Order_From</th>
                                     <th>Product</th>
                                     <th>Timeline</th>
                                     <th>Quantity</th>
                                     <th>Total</th>
                                     <th>Order_Description</th>
-                                    <th>Order_Date</th>
+                                    <th>Updated_at</th>
                                     <th>Status</th>
                                     <th>Action</th>
                                 </tr>
@@ -255,7 +255,11 @@
                             <tbody>
                                 <tr>
                                     <td>#251</td>
-                                    <td>John William</td>
+                                    <td>12-12-2026</td>
+                                    <td>
+                                        <p class="fs-14 mb-0 ">John William</p>
+                                        <p class="fs-14 mb-0 fw-bold">Random Company LTD</p>
+                                    </td>
                                     <td>Infrastructure</td>
                                     <td>Urgent</td>
                                     <td>1</td>
@@ -263,11 +267,15 @@
                                     <td class="w-25"><p class="truncate-2 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint amet quasi deleniti vitae unde reprehenderit enim consequuntur placeat! Laboriosam consectetur dignissimos, magni assumenda molestiae id earum nemo mollitia asperiores reiciendis!</p></td>
                                     <td>12-12-2026</td>
                                     <td><p class="mb-0"><span class="badge bg-warning text-white fs-13">Pending</span></p></td>
-                                    <td><a href="" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">View Details</a></td>
+                                    <td><a href="" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">View</a></td>
                                 </tr>
                                 <tr>
                                     <td>#253</td>
-                                    <td>John William</td>
+                                    <td>12-12-2026</td>
+                                    <td>
+                                        <p class="fs-14 mb-0 ">John William</p>
+                                        <p class="fs-14 mb-0 fw-bold">Random Company LTD</p>
+                                    </td>
                                     <td>Infrastructure</td>
                                     <td>Urgent</td>
                                     <td>3</td>
@@ -275,11 +283,15 @@
                                     <td class="w-25"><p class="truncate-2 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint amet quasi deleniti vitae unde reprehenderit enim consequuntur placeat! Laboriosam consectetur dignissimos, magni assumenda molestiae id earum nemo mollitia asperiores reiciendis!</p></td>
                                     <td>12-12-2026</td>
                                     <td><p class="mb-0"><span class="badge bg-success text-white fs-13">Approved</span></p></td>
-                                    <td><a href="" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">View Details</a></td>
+                                    <td><a href="" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">View</a></td>
                                 </tr>
                                 <tr>
                                     <td>#254</td>
-                                    <td>John William</td>
+                                    <td>12-12-2026</td>
+                                    <td>
+                                        <p class="fs-14 mb-0 ">John William</p>
+                                        <p class="fs-14 mb-0 fw-bold">Random Company LTD</p>
+                                    </td>
                                     <td>Infrastructure</td>
                                     <td>Urgent</td>
                                     <td>1</td>
@@ -287,11 +299,15 @@
                                     <td class="w-25"><p class="truncate-2 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint amet quasi deleniti vitae unde reprehenderit enim consequuntur placeat! Laboriosam consectetur dignissimos, magni assumenda molestiae id earum nemo mollitia asperiores reiciendis!</p></td>
                                     <td>12-12-2026</td>
                                     <td><p class="mb-0"><span class="badge bg-danger text-white fs-13">Rejected</span></p></td>
-                                    <td><a href="" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">View Details</a></td>
+                                    <td><a href="" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">View</a></td>
                                 </tr>
                                 <tr>
                                     <td>#254</td>
-                                    <td>John William</td>
+                                    <td>12-12-2026</td>
+                                    <td>
+                                        <p class="fs-14 mb-0 ">John William</p>
+                                        <p class="fs-14 mb-0 fw-bold">Random Company LTD</p>
+                                    </td>
                                     <td>Infrastructure</td>
                                     <td>Urgent</td>
                                     <td>1</td>
@@ -299,11 +315,15 @@
                                     <td class="w-25"><p class="truncate-2 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint amet quasi deleniti vitae unde reprehenderit enim consequuntur placeat! Laboriosam consectetur dignissimos, magni assumenda molestiae id earum nemo mollitia asperiores reiciendis!</p></td>
                                     <td>12-12-2026</td>
                                     <td><p class="mb-0"><span class="badge bg-info text-white fs-13">Delivered</span></p></td>
-                                    <td><a href="" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">View Details</a></td>
+                                    <td><a href="" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">View</a></td>
                                 </tr>
                                 <tr>
                                     <td>#254</td>
-                                    <td>John William</td>
+                                    <td>12-12-2026</td>
+                                    <td>
+                                        <p class="fs-14 mb-0 ">John William</p>
+                                        <p class="fs-14 mb-0 fw-bold">Random Company LTD</p>
+                                    </td>
                                     <td>Infrastructure</td>
                                     <td>Urgent</td>
                                     <td>5</td>
@@ -311,7 +331,7 @@
                                     <td class="w-25"><p class="truncate-2 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint amet quasi deleniti vitae unde reprehenderit enim consequuntur placeat! Laboriosam consectetur dignissimos, magni assumenda molestiae id earum nemo mollitia asperiores reiciendis!</p></td>
                                     <td>12-12-2026</td>
                                     <td><p class="mb-0"><span class="badge bg-secondary text-white fs-13">Completed</span></p></td>
-                                    <td><a href="" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">View Details</a></td>
+                                    <td><a href="" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">View</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -418,13 +438,11 @@
 	</svg>
 </div>
 
-
-<!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title fw-bold" id="staticBackdropLabel">Buyer Order Details</h5>
+        <h5 class="modal-title fw-bold" id="staticBackdropLabel">#287 Order Details</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -433,7 +451,8 @@
 				<img src="../../assets/images/home/david.png" class="profile-img-views" alt="">
 			</div>
 			<div class="col-md-9">
-				<h6 class="card-title fw-bold mb-3">John william</h6>
+                <h6 class="fw-bold mb-2">Company Name</h6>
+				<p class="fw-bold mb-1">John william</p>
                 <p class="fs-14 fw-bold">Profile Status : <span class="verified-btn ms-2"><img src="../../assets/images/home/verified.png" class="img-fluid" alt="">  Verified</span></p>
 				<p class="mb-2 fs-14">Phone : <a class="text-primary" href="">+44 0000 0000</a></p>
                 <p class="fs-14 mb-2">Email : <a class="text-primary" href="">john@example.com</a></p>
@@ -447,7 +466,6 @@
                 <h6 class="fw-bold mb-3">Order Details</h6>
                 <p class="fs-14 fw-bold"><span class="fw-bold">Product</span> : <span class="text-primary">Transformer / £100</span> <span class="mx-2">-</span> <a href="" class="btn btn-primary btn-sm fs-12">View Product</a></p>
                 <p class="fs-14"><span class="fw-bold">TimeLine</span> : Urgent </p>
-                <p class="fs-14"><span class="fw-bold">Status</span> : <span class="badge bg-warning fs-13">Pending</span></p>
                 <p class="fs-14"><span class="fw-bold">Quantity</span> : <span class="">3</span></p>
 				<p class="card-text fs-14 mb-2">
 					<span class="fw-bold">Order Description:</span> 
@@ -457,19 +475,24 @@
 					</span>
 				</p>
                 <p class="fs-14"><span class="fw-bold">Total Cost</span> : <span class="">£ 300</span></p>
+                <div class="">
+                    <hr>
+                    <p class="fs-14 fw-bold">From Seller</p>
+                    <p class="fs-14 mb-1"><span class="fw-bold">Status</span> : <span class="badge bg-info fs-13">Delivered</span></p>
+                    <p class="fs-14"><span class="fw-bold">Additional Notes</span> : <span class="fs-13">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolorem dolore cum quas modi laborum molestiae, explicabo doloremque ratione? Doloremque, eos rerum excepturi dolores vitae aliquam officia odio incidunt impedit?</span></p>
+                </div>
                 <hr>
             </div>
             <div class="col-md-12">
+                <p>Please select an option and take the appropriate action to complete this deal.</p>
                 <form action="">
                     <div class="row">
                         <div class="col-md-8 mb-3">
-                            <label for="" class="form-label fw-bold text-dark">Select Action</label>
+                            <label for="" class="form-label fw-bold text-dark">Select Options</label>
                             <select name="" class="form-control form-select border border-secondary" id="">
-                                <option value="" disabled selected>Please Select</option>
-                                <option value="">Approved</option>
-                                <option value="">Delivered</option>
-                                <option value="">Completed</option>
-                                <option value="">Rejected</option>
+                                <option value="" disabled="" selected="">Please Select</option>
+                                <option value="">Confirm Receipt & Complete</option>
+                                <option value="">Reject (Faulty / Damaged / Issue / Other)</option>
                             </select>
                         </div>
                         <div class="col-md-8 mb-3">
@@ -495,7 +518,6 @@
     </div>
   </div>
 </div>
-
 
 <script src="../../assets/js/jquery.js"></script>
 <script src="../../assets/js/popper.min.js"></script>

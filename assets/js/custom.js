@@ -197,18 +197,15 @@ input.addEventListener("change", function() {
 }
 
 
-// document.addEventListener("click", function(e) {
-//     if (e.target.classList.contains("see-more-btn")) {
-        
-//         let btn = e.target;
-//         let text = btn.closest("p").querySelector(".description-text");
+let productPrice = document.getElementById('productPrice');
+let quantity = document.getElementById('quantity');
+let totalCost = document.getElementById('totalCost');
 
-//         text.classList.toggle("truncate-3");
+function calculateTotal() {
+    let price = parseFloat(productPrice.innerText) || 0;
+    let qty = parseFloat(quantity.value) || 0;
 
-//         if (text.classList.contains("truncate-3")) {
-//             btn.innerText = "See More";
-//         } else {
-//             btn.innerText = "See Less";
-//         }
-//     }
-// });
+    totalCost.innerText = (price * qty).toFixed(2);
+}
+
+quantity.addEventListener('input', calculateTotal);
